@@ -8,12 +8,20 @@ import {
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
+   apiKey: "AIzaSyCwO22aCTR1acDMHzfsfZMpIL5IowhdnWg",
+
+  authDomain: "rtd-react.firebaseapp.com",
+
+  projectId: "rtd-react",
+
+  storageBucket: "rtd-react.firebasestorage.app",
+
+  messagingSenderId: "850689650260",
+
+  appId: "1:850689650260:web:385100ef72d80aa0c447c1",
+
+  measurementId: "G-66HSSHBXBR"
+
 };
 
 const firebaseApp = !getApps().length
@@ -44,7 +52,7 @@ export const fetchToken = async (setTokenFound, setFcmToken) => {
 
     const currentToken = await getToken(messaging, {
       vapidKey:
-        "",
+        "BD9Ug48UATjQNeVsQzS0WnMit1RgC6P6kJ-hpxRmljp8zGT5AbEga5LPUUihjVo8gVh4KgPLDTalnUFeICvwAuU",
     });
 
     if (currentToken) {
